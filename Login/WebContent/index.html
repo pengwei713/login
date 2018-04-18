@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>博客首页</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+	<header>
+		<div id="nav">
+			<a href="">首页</a> <a href="admin_index.jsp">后台管理</a>
+		</div>
+	</header>
+	<div id="content">
+		<div id="left">
+			<p class="pcl">您当前的位置：<a href="">网站首页</a> > <a href="">慢生活</a> ></p>
+			<ul id="uid">
+			</ul>
+			<p align="center" class="bot">1页4条记录</p>
+		</div><div id="right">
+			<div id="search">
+				<input type="text" id="sear" placeholder="Search">
+			</div>
+			<div id="login">
+				<!-- <div id="inf">
+				<span><img src="image/login.jpg" alt=""></span>
+				<ul id="loul">
+					<li>昵称：程序员</li>
+					<li>性别：女</li>
+					<li>简介：人所缺乏的不是才干而是志向，不是成功的能力而是勤劳的意志。</li>
+				</ul>
+				</div> -->
+				<div id="log">
+					<table class="logtab">
+						<!-- <tr>
+							<th>登录</th>
+							<th><a href="javascript:;" id="rega">没有账号？注册一个</a></th>
+						</tr> -->
+					</table>
+					<div id="register">
+						<div id="main">
+							<h1>欢迎注册博客</h1>
+							<form action="adduser" method="post" enctype="multipart/form-data">
+								<table>
+									<tr>
+										<td>用户名：</td>
+										<td>
+											<input type="text" name="username" id="username" len="3" flag="false">
+											<span>用户名不能为空</span>
+											<span>用户名至少3个字符</span>
+											<span>用户名可用</span>
+											<span>用户名已存在</span>
+										</td>
+									</tr>
+									<tr>
+										<td>登录密码：</td>
+										<td>
+											<input type="password" name="password" id="password" class="impc" len="5" flag="false">
+											<span>密码不能为空</span>
+											<span>密码至少5个字符</span>
+											<span>密码可用</span>
+										</td>
+									</tr>
+									<tr>
+										<td>重复密码：</td>
+										<td>
+											<input type="password" id="password2" len="5" flag="false">
+											<span>密码不能为空</span>
+											<span>密码至少5个字符</span>
+											<span>密码重复正确</span>
+											<span>密码重复错误</span>
+										</td>
+									</tr>
+									<tr>
+										<td>昵称：</td>
+										<td>
+											<input type="text" name="nickname" id="nickname" class="impc" len="3" flag="false">
+											<span>昵称不能为空</span>
+											<span>昵称至少3个字符</span>
+											<span>昵称可用</span>
+										</td>
+									</tr>
+									<tr>
+										<td>头像：</td>
+										<td>
+											<b id="uploa">上传图片</b>
+											<input type="file" accept="image/*" name="headimg" id="headimg">
+											<span>头像不能为空</span>
+											<span></span>
+											<span>头像可用</span>
+										</td>
+									</tr>
+									<tr>
+										<td>简介：</td>
+										<td>
+											<textarea cols="30" rows="10" name="remark" id="remark" class="impc" len="3" flag="false"></textarea>
+											<span>简介不能为空</span>
+											<span>简介至少3个字符</span>
+											<span>简介可用</span>
+										</td>
+									</tr>
+									<tr>
+										<td>性别：</td>
+										<td><input type="radio" name="sex" value="男" checked="checked" class="sex">男<input type="radio" name="sex" value="女" class="sex">女</td>
+									</tr>
+									<tr>
+										<td>超级管理：</td>
+										<td><input type="radio" name="admin" value="1" checked="checked" class="admin">是<input type="radio" name="admin" value="0" class="admin" checked="checked">否</td>
+									</tr>
+									<tr>
+										<td colspan="2" style="text-align: left"><input type="submit" value="注册" id="sub" disabled="disabled"> <b></b></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+					<form action="login">
+						<table class="logtab" id="logt">
+							<tr>
+								<td>用</td><td>户</td><td>名：</td>
+								<td><input type="text" class="inp" placeholder="Username" name="username" id="usernam"></td>
+							</tr>
+							<tr>
+								<td>密</td><td></td><td>码：</td> 
+								<td><input type="password" class="inp" placeholder="Password" name="password" id="passwor"></td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									<input type="submit" value="登录" id="subm"> <b></b>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			<div id="tui">
+				<p class="tit">推荐文章</p>
+				<ul id="tituid">
+
+				</ul>
+			</div>
+			<div id="tw">
+				<p class="tit">图文并茂</p>
+				<ul id="titul">
+				</ul>
+			</div>
+			<div id="hc">
+				<p class="tit">热门点击</p>
+				<ul id="titul1">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>Copyright &copy; 2002-2011<span>版权所有</span><span>备案1234567号 站长统计</span></p>
+	</footer>
+</body>
+</html>
